@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FinMasterPlus</string>
+    <string name="main">Главная</string>
+    <string name="reports">Отчеты</string>
+    <string name="history">История</string>
+    <string name="profile">Профиль</string>
+    <string name="errorAddSum">введите сумму</string>
+    <string name="errorAddData">введите дату</string>
+    <string name="errorAddCategory">введите категорию</string>
+    <string name="hello_blank_fragment">Иди домой, ты пьян Вася</string>
+    <string name="add_card_or_wallet">Добавить карту или кошелек</string>
+    <string name="card">Карта</string>
+    <string name="wallet">Кошелек</string>
+</resources>
