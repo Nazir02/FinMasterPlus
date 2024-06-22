@@ -14,23 +14,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         bind = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bind.root)
 
-        // Инициализация NavHostFragment и NavController
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.frgChanger) as? NavHostFragment
-            ?: throw IllegalStateException("NavHostFragment is not found")
-        navController = navHostFragment.navController
-
-        // Настройка BottomNavigationView с NavController
-        bind.bottomNavigationView.setupWithNavController(navController)
-        bind.bottomNavigationView.background=null
-        
-
-        // Привязка FAB к BottomAppBar
-        bind.fab.setOnClickListener {
-            // Ваш код для действия при нажатии на FAB
-        }
     }
 }
