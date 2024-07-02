@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="toscaSecondary">#2ec4b6</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorTitleBlack">#292B2D</color>
+    <color name="colorSubTitleBlack">#91919F</color>
 </resources>
