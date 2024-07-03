@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/main_container"
+        android:id="@+id/mainContainer"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -29,6 +29,7 @@
         style="@style/Widget.MaterialComponents.BottomNavigationView"
         android:layout_gravity="bottom"
         app:labelVisibilityMode="labeled"
+        app:itemIconSize="28dp"
         app:itemBackground="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/nav_menu"

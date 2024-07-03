@@ -10,13 +10,20 @@ import tj.khujand.finmasterplus.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bind: ActivityMainBinding
-    private lateinit var navController: NavController
+    private var navHostFragment: NavHostFragment? = null
+
+    private  val navController: NavController by lazy {
+        navHostFragment = supportFragmentManager.findFragmentById(R.id.mainContainer) as NavHostFragment
+        navHostFragment!!.navController
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         bind = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bind.root)
+
+        bind.bottomNavigationMain.setupWithNavController(navController)
 
     }
 }

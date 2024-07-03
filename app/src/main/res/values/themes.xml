@@ -12,17 +12,4 @@
         <item name="cornerSize">50%</item>
     </style>
 
-    <style name="ChipStyle" parent="Base.Widget.Material3.Chip">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:checkable">false</item>
-        <item name="closeIconVisible">true</item>
-        <item name="closeIconEnabled">true</item>
-        <item name="checkedIcon">@null</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/roboto_medium</item>
-        <item name="chipStrokeColor">#B27E7983</item>
-        <item name="iconStartPadding">4dp</item>
-        <item name="closeIconStartPadding">-2dp</item>
-        <item name="closeIconEndPadding">0dp</item>
-    </style>
 </resources>
