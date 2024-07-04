@@ -24,4 +24,9 @@
         android:name="tj.khujand.finmasterplus.ui.report.ReportFragment"
         android:label="fragment_report"
         tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/addFinancialEntryFragment"
+        android:name="tj.khujand.finmasterplus.ui.transferEntry.AddFinancialEntryFragment"
+        android:label="fragment_add_financial_entry"
+        tools:layout="@layout/fragment_add_financial_entry" />
 </navigation>
