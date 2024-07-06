@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import tj.khujand.finmasterplus.R
+import tj.khujand.finmasterplus.core.NavigationUtil.navigateTo
 import tj.khujand.finmasterplus.databinding.FragmentHomeBinding
 
 
@@ -18,6 +19,12 @@ class HomeFragment : Fragment() {
     ): View {
         bind = FragmentHomeBinding.inflate(inflater, container, false)
 
+        bind.clIncome.setOnClickListener {
+            navigateTo(R.id.addFinancialEntryFragment)
+        }
+        bind.clExpenses.setOnClickListener {
+            navigateTo(R.id.addFinancialEntryFragment)
+        }
         return bind.root
     }
 }
