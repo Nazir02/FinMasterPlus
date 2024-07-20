@@ -21,18 +21,16 @@ class HomeFragment : Fragment() {
         bind = FragmentHomeBinding.inflate(inflater, container, false)
 
         bind.clIncome.setOnClickListener {
-            val navController = findNavController()
-            val bundle = Bundle().apply {
-                putString("param", "Income")
-            }
-            navController.navigate(R.id.action_homeFragment_to_addFinancialEntryFragment, bundle)
-        }
-        bind.clExpenses.setOnClickListener {
-            val navController = findNavController()
             val bundle = Bundle().apply {
                 putString("param", "Expenses")
             }
-            navController.navigate(R.id.action_homeFragment_to_addFinancialEntryFragment, bundle)
+        navigateTo(R.id.addFinancialEntryFragment,bundle)
+        }
+        bind.clExpenses.setOnClickListener {
+            val bundle = Bundle().apply {
+                putString("param", "Income")
+            }
+            navigateTo(R.id.addFinancialEntryFragment,bundle)
         }
         return bind.root
     }
